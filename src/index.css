@@ -1,6 +1,10 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: black;
+  /* background-image: url('./img/music.jpg');
+  background-size: cover; */
+  display: flex;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -12,3 +16,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+

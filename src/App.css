@@ -1,33 +1,113 @@
-.App {
+.glow {
+  font-size: 80px;
+  color: #fefacd;
   text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fdfbe6, 0 0 20px #fefacd, 0 0 30px #fcf59b, 0 0 40px #fcf59b, 0 0 50px #fcf59b, 0 0 60px #fcf59b, 0 0 70px #fcf59b;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fdfbe6, 0 0 30px #5f310f, 0 0 40px #5f310f, 0 0 50px #5f310f, 0 0 60px #5f310f, 0 0 70px #5f310f, 0 0 80px #5f310f;
+  }
+}
+
+.App {
+  text-align: center;
+  /* color: rgb(255, 255, 255); */
+  display: block;
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  min-width: 100vw;
+  background-image: url('./img/music.jpg');
+  background-size: cover;
+  /* display: flex; */
+  /* flex-direction: column; */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* justify-content: center; */
+  /* font-size: calc(10px + 2vmin);
+  color: white; */
+}
+.headerTitle {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 15%;
+  z-index: 1;
+  /* color: #321507; */
+  text-transform: uppercase;
+}
+.headerTitle h1{
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  /* text-shadow: .3rem .3rem .5rem #fffcdc; */
+  padding-bottom: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-lg{
+  margin: 5px;
+  border-width: medium;
+  border-radius: 25;
+  padding: .6rem 1.3rem;
+  font-size: 1.1rem;
+  color: #fefacd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-outline-light{
+  border-color: #fefacd;
+}
+
+.btn-outline-light:hover{
+  background: #fefacd;
+}
+
+.lyricsAndAssociations {
+  padding: 10px;
+  min-height: 100vh;
+}
+.appContainer {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-left: 0;
+  margin-right: 0;
+  width:100vw;
+}
+.association-container{
+  width: 100vw;
+  max-height:50vw;
+}
+
+/* .associationsCloud {
+  background-color: rgba(0, 0, 0, 0.658);
+  
+} */
+.no-result-text {
+  color: #f83c02;
+}
+.songResultDiv {
+  /* background-color: #0000009c; */
+  min-width: 50vw;
+  color: #fcfae5;
+}
+
+.searchCol {
+  margin: 5px;
+  padding-right: 15px;
+}
+.resultCol {
+  margin: 5px;
+  padding-left: 15px;
+  max-width: 50vw;
+}
+
+.lyricsText {
+  color: #fefacd;
 }

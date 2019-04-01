@@ -1,0 +1,12 @@
+
+
+.songSearchInput{
+    margin: 5px;
+    background-color: #fdfbdf;
+}
+
+.songSearchInput:focus{
+    margin: 5px;
+    background-color: #fefacd;
+    border-color: #5f300fb0;
+}
